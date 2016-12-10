@@ -23,11 +23,18 @@ To serve in the browser
 $ ionic serve
 ```
 
-### Run in Android Emulator
+### To Add Platforms
+```sh
+$ cordova platform add android
+$ cordova platform add ios
+```
+
+### Run Platforms
 To run in avd
 
 ```sh
 $ ionic run android
+$ ionic run ios
 ```
 
 ### Build Android APK File
