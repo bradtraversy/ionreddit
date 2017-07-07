@@ -7,7 +7,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html',
-  providers: [RedditService]
+  providers: [StatusBar, Splashscreen, RedditService]
 })
 export class MyApp {
   rootPage = TabsPage;
