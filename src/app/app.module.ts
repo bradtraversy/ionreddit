@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import {StatusBar, Splashscreen} from 'ionic-native';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { RedditsPage } from '../pages/reddits/reddits';
@@ -28,6 +29,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     DetailsPage,
     TabsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    StatusBar,
+    Splashscreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
